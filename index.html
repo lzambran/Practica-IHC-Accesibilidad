@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta name="description" content="La forma sencilla de aprender y entender vale más que copiar y no saber " />
+    <meta name="description" content="Autor: Luis Antonio Zambrano Demera">
+    <meta name="theme-color" content="#317EFB" />
+    <title>Mi Portafolio</title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="images/Portada.jpg">
+    <link rel="apple-touch-icon" href="/example.png">
+
+    <style>
+        * {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img class="header-img" src="images/Portada.jpg" width="400" height="400" alt="imagen principal del sitio" />
+        </div>
+        <h1 class="header">Luis Antonio Zambrano Demera</h1>
+        <h2 class="subtitle">Cuarto "A"</h2>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a class="nav-item" href="#acerca">
+                        <FONT SIZE=6> Acerca de </FONT>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#proyecto">
+                        <FONT SIZE=6>Mis Proyectos</FONT>
+                    </a>
+                </li>
+                <li>
+                    <a class="nav-item" href="#contacto">
+                        <FONT SIZE=6>Contacto</FONT>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--El main es el que no deja llegar al 100%-->
+    <main>
+        <section id=acerca>
+            <h2 class="header"> Acerca de Luis</h2>
+            <article>
+                <p class="intro">
+                    <FONT SIZE=5>
+                        Hola! me llamo Luis 👋 Soy Ecuatoriano,Estudio en la Universidad Laica “Eloy Alfaro” de Manabí, en la carrera de Ingeniero en Tecnologia de la Informacion, amo los videos juegos y tambien crear cosas instuitivas para la web 😍 Llevo practicando hace como 5 meses enfocándome en programacion web, En lo que me concierne practico tanto como HTML, CSS,
+                        javascript y accesibilidad. Me interesa crear una web donde todo el mundo pueda participar. Aquí puedes ver mi proyecto reciente y también puedes contactarme por si quieres hablar de tecnología, accesibilidad o videos juegos!
+                    </FONT>
+                </p>
+                <ul class="social-media">
+                    <li>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener"> <img src="images/twitter.png" width="400" height="400" alt="twitter" />
+                            <p class="social-link-text">Twitter</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/" target="_blank" rel="noopener"><img src="images/github-logo.png" width="400" height="400" alt="github" />
+                            <p class="social-link-text">Github</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener"><img src="images/linkedin.png" width="400" height="400" alt="linkedin" />
+                            <p class="social-link-text">LinkedIn</p>
+                        </a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section id=proyecto>
+            <h2 class="header"> Mis proyectos</h2>
+            <div class="carousel">
+                <button class="arrow arrow-left" aria-label="Boton para ir hacia atras"></button>
+                <div class="window">
+                    <ul class="project-container">
+                        <li class="project1-container"><button class="project1 project"><img src="images/project1.jpg" class="project-img" width="400" height="400" alt="Mi primer proyecto"></button></li>
+                        <li class="project2-container"><button class="project2 project"><img src="images/project2.jpg" class="project-img" width="400" height="400" alt="Mi segundo proyecto"></button></li>
+                        <li class="project3-container"><button class="project3 project"><img src="images/project3.jpg" class="project-img" width="400" height="400" alt="Mi tercer proyecto"></button></li>
+                        <li class="project4-container"><button class="project4 project"><img src="images/project4.png" class="project-img" width="400" height="400" alt="Mi cuarto proyecto"></button></li>
+                        <li class="project5-container"><button class="project5 project"><img src="images/project5.png" class="project-img" width="400" height="400" alt="Mi quinto proyecto"></button></li>
+                    </ul>
+                </div>
+                <button class="arrow arrow-right" aria-label="Boton para ir hacia adelante">
+                    </button>
+            </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="modal-container">
+                <div class="modal">
+                    <h2 class="header" id="modal-header" tabindex="0">
+                        <FONT SIZE=8>Ejemplo de un proyecto mio</FONT>
+                    </h2>
+                    <div class="imagen-l">
+                        <img src="" class="modal-project-image" width="400" height="400" alt="pantallazo del proyecto" />
+
+                    </div>
+                    <button class="modal-button">
+                        <FONT SIZE=7>Cerrar</FONT>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id=contacto>
+        <footer class="contact-section">
+            <h2 class="header">Contacto</h2>
+            <p class="intro">Para mandarme un mensaje puedes usar el formulario que sigue</p>
+            <form  class="form-container">
+                <label class="form-label">
+                    Nombre</label><input type="text" aria-label="nombre" id="name" />
+                <span id="name-error" aria-live="assertive"></span>
+                <br />
+                <label class="form-label">Correo</label>
+                <input type="text" aria-label="correo" /> <br />
+                <label class="message-input">Mensaje<input type="text" /> <br /></label>
+                <button class="send-button">Enviar</button>
+            </form>
+        </footer>
+        <div class="notification" aria-live="assertive"></div>
+    </section>
+
+    <script src="index.js" type="text/javascript"></script>
+    
+</body>
+
+</html>
